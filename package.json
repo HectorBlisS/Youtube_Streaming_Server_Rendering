@@ -1,0 +1,26 @@
+{
+  "name": "streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-watch server",
+    "build": "esbuild ./client/index.jsx --bundle --outfile=./server/public/client.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-watch": "^7.7.2"
+  },
+  "dependencies": {
+    "esbuild": "0.17.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
